@@ -8,7 +8,6 @@ for (script of init) {
   }
   
   function leedata(data) {
-    //console.alert(data);
     let arr = data.split('{}');
     for (ar of arr){
         let test = ar.split('"buddy_id":');
@@ -18,7 +17,7 @@ for (script of init) {
 
   function formateaInfo(test){
       let file = []
-      for (profile of test){
+      for (profile of test)
           if(profile.contains('user')){
               
               estructurainfo(profile)
